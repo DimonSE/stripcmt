@@ -1,0 +1,33 @@
+.TH stripcmt 1
+.SH NAME
+StripCmt - strip comments from C, C++, and Java source code
+.SH SYNOPSIS
+stripcmt [infile] > outfile
+.SH DESCRIPTION
+.B StripCmt
+is a pretty small utility to remove comments from C, C++ or Java source
+code. It can be used as a FIFO (first in, first out) filter by not
+supplying any commandline options, or it can accept filenames on the
+commandline and it will send all output to stdout (multiple files will be
+concatenated like
+.B cat
+).
+.SH OPTIONS
+.TP 5
+.B infile
+The file(s) to strip comments from. Wildcards are accepted, of course.
+.TP 5
+.B outfile
+Where to write the output to. StripCmt sends output to stdout so you need
+to include the '>' for redirection to a file.
+.TP 5
+.B -h --help
+Show a brief commandline help screen and exit.
+.TP 5
+.B --version
+Show the current version and exit.
+.SH BUGS
+None known. Email bug reports to
+.B bdc@bdc.cx
+The StripCmt webpage is at
+.B http://www.bdc.cx/software/stripcmt/

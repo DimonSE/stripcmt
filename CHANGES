@@ -1,0 +1,53 @@
+This is the changelog for StripCmt
+
+  "We fear change." - Garth from Wayne's World
+  "Fear my sphincter, for it has powers beyond your comprehension" - me
+
+  I hope those quotes put the world in perspective for you.  They should.
+
+--
+
+0.1.2  (Aug 16 2000)
+  - applied patch by Malte John <malte@ddd.de> to fix yet another really bad
+    parse bug that would output two asterisks if there was one in a string.
+
+0.1.1  (Jan 15 2000)
+  - applied patch by Kristoffer Nyberg to fix a really bad bug that would
+    leave asterisks (*) in comments.
+
+0.1.0  (Aug 15 1999)
+  - added 'clean' option to Makefile
+  - fixed a few major bugs by rewriting the parser in a much better way
+  - added a man page that isn't very good, but it's late and I'm tired
+
+0.0.8  (Jun 15 1999)
+  - Changed output so it would display a linebreak after // style quotes
+
+0.0.7  (Feb 17 1999)
+  - Fixed parse bug involving '\\' and "\\" strings.  If it found those, it
+    wouldn't strip any comments (but it wouldn't corrupt the source code)
+
+0.0.6  (Feb  5 1999)
+  - Fixed parse bug involving single quotes inside of double quotes and
+    vice versa
+
+0.0.5  (Jan 27 1999)
+  - Added "install" option to Makefile
+  - Changed commandline handling around a bit
+  - Moved stuff into seperate files and commented more code
+  - Cleaned up the code a lot
+
+0.0.4
+  - Fixed bug involving quotes inside of comment blocks
+  - Fixed possible bug involving quotes inside of '' quotes (should never
+    appear in working code, but I want to cover every possible situation)
+
+0.0.3
+  - Changed commandline so it acts as a filter and accepts filenames
+  - Fixed bug involving // comments inside /**/ comments
+
+0.0.2
+  - First release
+
+--
+EOF
