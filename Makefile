@@ -2,14 +2,14 @@
 # --
 # Excuse me for this ugly thing.
 
-CC = gcc
+CC = g++
 # CFLAGS = -s -O3 -Wall -ansi -pedantic -ffast-math -fexpensive-optimizations
-CFLAGS = -s -Wall -ansi -pedantic
+CFLAGS =  -std=c++11 -s -Wall -pedantic
 INSTALL = `which install`
 
-stripcmt: stripcmt.c strip.c misc.c stripcmt.h
+stripcmt: stripcmt.cpp
 	$(CC) $(CFLAGS) \
-	  stripcmt.c  -o stripcmt
+	  stripcmt.cpp  -o stripcmt
 
 install: stripcmt stripcmt.1
 	$(INSTALL) ./stripcmt /usr/local/bin/stripcmt
